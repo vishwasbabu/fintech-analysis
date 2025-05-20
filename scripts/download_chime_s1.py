@@ -8,7 +8,13 @@ OUTPUT_PATH = os.path.join("data", "chime_s1.html")
 def download(url: str, output_path: str) -> None:
     """Download the given URL and save it to the output path."""
     os.makedirs(os.path.dirname(output_path), exist_ok=True)
-    headers = {"User-Agent": "Mozilla/5.0"}
+    # SEC EDGAR requires a descriptive User-Agent with contact information.
+    headers = {
+        "User-Agent": (
+            "Mozilla/5.0 (compatible; fintech-analysis; "
+            "contact@example.com)"
+        )
+    }
     response = requests.get(url, headers=headers)
     response.raise_for_status()
     with open(output_path, "wb") as f:
