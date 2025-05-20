@@ -17,6 +17,7 @@ requests
 beautifulsoup4
 transformers
 datasets
+gradio
 ```
 
 ## Download the Chime S-1 Filing
@@ -37,6 +38,16 @@ python scripts/train_llama_chatbot.py
 ```
 
 The resulting model will be saved in the `model/` directory.
+
+## Launch the Chatbot UI
+
+After training, start an interactive Gradio demo with:
+
+```bash
+python app.py
+```
+
+This command opens a local web server where you can ask questions about the Chime S‑1 filing.
 
 ## Deploy to HuggingFace
 
