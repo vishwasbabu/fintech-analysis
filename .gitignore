@@ -1,0 +1,7 @@
+# Data and model artifacts
+data/
+model/
+
+# Python cache files
+__pycache__/
+*.pyc
