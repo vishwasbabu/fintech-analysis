@@ -30,7 +30,7 @@ These commands fetch the filing from the SEC and convert it to plain text under 
 
 ## Train the Llama Chatbot
 
-Before running the training script, ensure you have accepted the license for the `meta-llama/Llama-2-7b-hf` model on HuggingFace and that you have sufficient compute resources.
+Before running the training script, ensure you have accepted the license for the `meta-llama/Llama-4-Scout-17B-16E-Instruct` model on HuggingFace and that you have sufficient compute resources.
 
 ```bash
 python scripts/train_llama_chatbot.py

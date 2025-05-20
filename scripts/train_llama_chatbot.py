@@ -10,7 +10,7 @@ from transformers import (
 )
 from datasets import load_dataset, Dataset
 
-MODEL_NAME = "meta-llama/Llama-2-7b-hf"  # requires acceptance of the license on HuggingFace
+MODEL_NAME = "meta-llama/Llama-4-Scout-17B-16E-Instruct"  # requires acceptance of the license on HuggingFace
 DATA_FILE = os.path.join("data", "chime_s1.txt")
 
 
